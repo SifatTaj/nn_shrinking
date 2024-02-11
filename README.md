@@ -9,7 +9,10 @@ In this project, I would like to propose an efficient way to reduce the size and
 1. Randomly initialize a neural network $f(x; θ_0)$ (where $θ_0 ∼ D_θ$).
 2. Run 1 epoch and profile the time required for each iteration.
 3. Calculate the number of iteration $j$ for a given time $T$
-4. Set the pruning rate $p$ to achieve $f(x; mθ0)$ within $j$ iterations.
+4. Set the pruning rate $p$ to achieve $f(x; m \odot 0)$ within $j$ iterations.
 5. Train the network for j iterations, arriving at parameters $θ_j$. 
 6. Prune $p$% of the parameters in $θ_j$, creating a mask $m$. 
-7. Reset the remaining parameters to their values in $θ_0$, creating the winning ticket $f(x; mθ0)$.
+7. Reset the remaining parameters to their values in $θ_0$, creating the winning ticket $f(x; m \odot 0)$.
+
+## Evaluation
+For the evaluation of the proposed algorithm, I will initially implement and test it with some popular computer vision models and datasets. I would like to expand it to other domains, such as text and audio, to evaluate the effectiveness of the algorithm.
