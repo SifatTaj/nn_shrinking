@@ -6,7 +6,7 @@ In this project, I would like to propose an efficient way to reduce the size and
 
 ### Following is the proposed pruning algorithm:
 
-1. Randomly initialize a neural network $f(x; θ0)$ (where θ0 ∼ Dθ).
+1. Randomly initialize a neural network $f(x; θ_0)$ (where $θ_0 ∼ D_θ$).
 2. Train the network for j iterations, arriving at parameters θj . 
 3. Prune p% of the parameters in θj , creating a mask m. 
 4. Reset the remaining parameters to their values in θ0, creating the winning ticket f(x; mθ0).
