@@ -9,8 +9,8 @@ In this project, I would like to propose an efficient way to reduce the size and
 ### Following is the proposed pruning algorithm:
 
 1. Randomly initialize a neural network $f(x; θ_0)$ (where $θ_0 ∼ D_θ$).
-2. Run 1 epoch and profile the time required for each iteration.
-3. Calculate the number of iteration $j$ for a given time $T$
+2. Run 1 epoch and profile the time $t_e$ required for each iteration.
+3. Calculate the number of iteration $j$ using $t_e$ for a given time $T$
 4. Set the pruning rate $p$ to achieve $f(x; m \odot 0)$ within $j$ iterations.
 5. Train the network for j iterations, arriving at parameters $θ_j$. 
 6. Prune $p$% of the parameters in $θ_j$, creating a mask $m$. 
