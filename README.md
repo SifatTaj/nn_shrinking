@@ -17,4 +17,4 @@ In this project, I would like to propose an efficient way to reduce the size and
 7. Reset the remaining parameters to their values in $θ_0$, creating the winning ticket $f(x; m \odot 0)$.
 
 ## Evaluation
-For the evaluation of the proposed algorithm, I will initially implement and test it with some popular computer vision models and datasets. I would like to expand it to other domains, such as text and audio, to evaluate the effectiveness of the algorithm.
+For the evaluation of the proposed algorithm, I will initially implement and test it with some popular computer vision models and datasets. I would like to expand it to other domains, such as text and audio, to evaluate the effectiveness of the algorithm. I will test how the algorithm impacts accuracy on different models and datasets from different domains.
