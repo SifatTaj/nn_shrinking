@@ -18,3 +18,34 @@ In this project, I would like to propose an efficient way to reduce the size and
 
 ## Evaluation
 For the evaluation of the proposed algorithm, I will initially implement and test it with some popular computer vision models and datasets. I would like to expand it to other domains, such as text and audio, to evaluate the effectiveness of the algorithm. I will test how the algorithm impacts accuracy on different models and datasets from different domains.
+
+## Step 2: Dataset Collection
+Initially, the proposed pruning algorithm will be tested using some well-known computer vision datasets and models. As such, I have decided to use the following datasets:
+
+**CIFAR10:** The CIFAR-10 dataset is a widely used benchmark dataset in machine learning and computer vision research. It consists of 60,000 color images, each of size 32x32 pixels, belonging to 10 different classes (Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, and Truck).
+
+The dataset is split into 50,000 training images and 10,000 test images, with each class having an equal number of images. CIFAR-10 is often used for tasks such as object recognition, image classification, and feature extraction in the field of computer vision. It provides a challenging testbed for developing and evaluating machine learning algorithms due to its relatively small image size and the diversity of its classes.
+
+*Download Link: https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz*
+
+**CIFAR100:** The CIFAR-100 dataset is another widely used benchmark dataset in machine learning and computer vision research, similar to CIFAR-10 but with more fine-grained labels. It consists of 60,000 color images, also of size 32x32 pixels, but these images are divided into 100 different classes, each containing 600 images.
+
+The 100 classes in CIFAR-100 are grouped into 20 superclasses, each containing five fine-grained classes. Some examples of the fine-grained classes include: apple, mushroom, cloud, dolphin, oak tree, and so on.
+
+Similar to CIFAR-10, the CIFAR-100 dataset is split into 50,000 training images and 10,000 test images.
+
+CIFAR-100 is often used for more challenging classification tasks where finer distinctions between classes are necessary, making it suitable for tasks such as fine-grained object recognition, hierarchical classification, and multi-label classification.
+
+*Download Link: https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz*
+
+**Tiny-Imagenet:** The Tiny ImageNet dataset is a smaller version of the original ImageNet dataset, which is one of the most widely used datasets in the field of computer vision. The original ImageNet dataset is a large-scale dataset with millions of labeled images spanning thousands of object categories.
+
+Tiny ImageNet is a subset of the original ImageNet dataset. It contains 200 object categories, each with 500 training images, 50 validation images, and 50 test images. All images are of size 64x64 pixels. While smaller in scale compared to the original ImageNet, Tiny ImageNet still provides a challenging testbed for training and evaluating machine learning algorithms for tasks such as image classification, object detection, and image segmentation.
+
+Tiny ImageNet is often used for research and educational purposes, especially in cases where the computational resources required to work with the full ImageNet dataset are not available.
+
+*Download Link: http://cs231n.stanford.edu/tiny-imagenet-200.zip*
+
+
+
+
